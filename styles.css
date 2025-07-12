@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap');
+
+html {
+  /* Enables smooth scrolling for anchor links */
+  scroll-behavior: smooth;
+}
+
+/* 
+  Defines the initial state for sections that will fade in.
+  They start invisible and slightly moved down.
+*/
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/*
+  Defines the final state for the fade-in animation.
+  This class is added by JavaScript when the section becomes visible in the viewport.
+*/
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}

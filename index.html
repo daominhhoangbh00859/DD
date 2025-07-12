@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BTEC: Mùa Hè - Ước Mơ - Hội Nhập</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'sans': ['Be Vietnam Pro', 'sans-serif'],
+              'serif': ['Playfair Display', 'serif'],
+            },
+            colors: {
+              'btec-blue': '#0055A4',
+              'btec-red': '#EF4135',
+              'summer-gold': '#FFC72C',
+              'tradition-brown': '#8B4513',
+              'ink-black': '#1a1a1a',
+            }
+          }
+        }
+      }
+    </script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-gray-50 font-sans text-ink-black antialiased">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-md">
+      <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+        <a href="#hero" aria-label="Trang chủ">
+            <div class="flex items-center space-x-2">
+                <img src="https://cdn.haitrieu.com/wp-content/uploads/2023/02/Logo-Truong-cao-dang-Quoc-te-BTEC-FPT.png" alt="BTEC Logo" class="h-12 w-auto" />
+                <span class="font-bold text-sm uppercase text-btec-blue hidden md:block">Cao đẳng quốc tế BTEC</span>
+            </div>
+        </a>
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="#hero" class="text-gray-700 hover:text-btec-red font-medium transition-colors duration-300">Mùa Hè</a>
+          <a href="#tradition" class="text-gray-700 hover:text-btec-red font-medium transition-colors duration-300">Cổ Truyền</a>
+          <a href="#btec" class="text-gray-700 hover:text-btec-red font-medium transition-colors duration-300">Về BTEC</a>
+          <a href="#gallery" class="text-gray-700 hover:text-btec-red font-medium transition-colors duration-300">Thư Viện</a>
+          <a href="#contact" class="text-gray-700 hover:text-btec-red font-medium transition-colors duration-300">Liên Hệ</a>
+        </nav>
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="text-gray-700 hover:text-btec-red focus:outline-none">
+            <svg id="menu-open-icon" class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+            <svg id="menu-close-icon" class="h-6 w-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+        <nav class="flex flex-col items-center space-y-4 py-4">
+          <a href="#hero" class="mobile-nav-link text-gray-700 hover:text-btec-red font-medium transition-colors duration-300">Mùa Hè</a>
+          <a href="#tradition" class="mobile-nav-link text-gray-700 hover:text-btec-red font-medium transition-colors duration-300">Cổ Truyền</a>
+          <a href="#btec" class="mobile-nav-link text-gray-700 hover:text-btec-red font-medium transition-colors duration-300">Về BTEC</a>
+          <a href="#gallery" class="mobile-nav-link text-gray-700 hover:text-btec-red font-medium transition-colors duration-300">Thư Viện</a>
+          <a href="#contact" class="mobile-nav-link text-gray-700 hover:text-btec-red font-medium transition-colors duration-300">Liên Hệ</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="relative h-screen flex items-center justify-center text-white">
+          <div class="absolute inset-0 bg-black opacity-50"></div>
+          <img src="https://thanhnienviet.mediacdn.vn/91575133199802368/2025/6/25/unnamed-1-17508667306401712277748.jpg" alt="Sĩ tử trong mùa hè" class="absolute inset-0 w-full h-full object-cover"/>
+          <div class="relative z-10 text-center px-6">
+            <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl font-extrabold drop-shadow-lg">
+              <span class="text-summer-gold">Mùa Hè</span> Gieo Mộng
+            </h1>
+            <p class="mt-4 max-w-2xl mx-auto text-lg md:text-xl font-light leading-relaxed drop-shadow-md">
+              Chào những người <span class="font-bold">sĩ tử</span> dũng cảm, mùa hè không chỉ là trang sách khép lại, mà là chương mới của hành trình chạm đến ước mơ.
+            </p>
+            <blockquote class="mt-8 italic text-base md:text-lg border-l-4 border-summer-gold pl-4">
+              "Trang đời mới mở, bước vào mộng xanh. <br/>
+              Mong ngày vươn cánh, chạm thành ước ao."
+            </blockquote>
+            <a href="#btec" class="mt-12 inline-block bg-btec-red text-white font-bold py-3 px-8 rounded-full hover:bg-red-700 transition-transform duration-300 transform hover:scale-105 shadow-xl">
+              Khám Phá Hành Trình Mới
+            </a>
+          </div>
+        </section>
+
+        <!-- Tradition Section -->
+        <section id="tradition" class="py-20 bg-white fade-in-section">
+          <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+              <h2 class="font-serif text-4xl md:text-5xl font-bold text-tradition-brown">
+                Nét <span class="text-btec-red">Cổ Truyền</span> In Dấu Tương Lai
+              </h2>
+              <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+                Những giá trị văn hóa ngàn năm không phai mờ, mà là nền tảng vững chắc để thế hệ trẻ tự tin vươn ra thế giới.
+              </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+              <div class="order-2 md:order-1">
+                <h3 class="font-serif text-3xl font-bold text-ink-black mb-4">Chắt Lọc Tinh Khôi</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                  BTEC trân trọng và phát huy những giá trị <strong>cổ truyền</strong>, lồng ghép vào chương trình đào tạo hiện đại, giúp sinh viên không chỉ giỏi chuyên môn mà còn giàu bản sắc, trở thành niềm tự hào của dân tộc.
+                </p>
+                <blockquote class="border-l-4 border-tradition-brown pl-4 italic text-gray-600 my-6">
+                  "Những nét cổ truyền phai đâu, vẫn in dấu cũ, đậm màu tương lai."
+                </blockquote>
+                <p class="text-gray-700 leading-relaxed">
+                  Từ tà áo dài trong lễ tốt nghiệp đến tinh thần "tôn sư trọng đạo" trong giảng đường, văn hóa Việt là hành trang quý giá trên con đường hội nhập.
+                </p>
+              </div>
+              <div class="order-1 md:order-2 rounded-lg overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500">
+                <img 
+                  src="https://phongkhamthuanduc.com/uploads/static/Tet%201.jpg" 
+                  alt="Nét đẹp cổ truyền Việt Nam" 
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- BTEC Section -->
+        <section id="btec" class="py-20 bg-gray-100 fade-in-section">
+          <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+              <div class="rounded-lg overflow-hidden shadow-2xl">
+                 <img 
+                  src="https://btec.fpt.edu.vn/wp-content/uploads/2023/03/PTL00749-scaled.jpg.webp" 
+                  alt="Sinh viên BTEC năng động" 
+                  class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div>
+                <img src="https://cdn.haitrieu.com/wp-content/uploads/2023/02/Logo-Truong-cao-dang-Quoc-te-BTEC-FPT.png" alt="BTEC Logo" class="h-16 mb-4" />
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-btec-blue">
+                  Cao Đẳng Quốc Tế BTEC
+                </h2>
+                <p class="mt-4 text-lg text-gray-600 font-semibold">Ngọn gió sang trang, mang hơi thở mới.</p>
+                <p class="mt-4 text-gray-700 leading-relaxed">
+                  <strong>Cao đẳng quốc tế BTEC</strong> là nơi khởi đầu cho hành trình chinh phục đỉnh cao tri thức và sự nghiệp toàn cầu. Với chương trình đào tạo chuẩn Anh Quốc, môi trường học tập năng động và chú trọng thực hành, BTEC mang đến cho các <strong>sĩ tử</strong> một con đường vững chắc để biến ước mơ thành hiện thực.
+                </p>
+                <div class="mt-8 flex flex-wrap gap-4">
+                   <a href="https://btec.fpt.edu.vn/" target="_blank" rel="noopener noreferrer" class="bg-btec-blue text-white font-bold py-3 px-6 rounded-full hover:bg-blue-800 transition-colors duration-300 shadow-lg">
+                    Tìm Hiểu Thêm
+                  </a>
+                   <a href="#contact" class="bg-transparent border-2 border-btec-blue text-btec-blue font-bold py-3 px-6 rounded-full hover:bg-btec-blue hover:text-white transition-colors duration-300">
+                    Nhận Tư Vấn
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="py-20 bg-white fade-in-section">
+          <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+              <h2 class="font-serif text-4xl md:text-5xl font-bold text-ink-black">
+                Khoảnh Khắc Tạo Nên Hành Trình
+              </h2>
+              <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+                Mỗi hình ảnh là một câu chuyện, một mảnh ghép tạo nên bức tranh toàn cảnh về con đường bạn sắp bước qua.
+              </p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                  <img src="https://thanhnienviet.mediacdn.vn/zoom/700_438/uploads/2023/05/29/1-1685324434.JPG" />
+                  <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-500 flex items-end">
+                    <h3 class="text-white font-bold text-xl p-4 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">Mùa Hè Năng Động</h3>
+                  </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                  <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Sĩ tử học bài" class="w-full h-96 object-cover transform group-hover:scale-110 transition-transform duration-500" />
+                  <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-500 flex items-end">
+                    <h3 class="text-white font-bold text-xl p-4 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">Hành Trình Sĩ Tử</h3>
+                  </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                  <img src="data:image/jpeg;base64,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" />
+                  <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-500 flex items-end">
+                    <h3 class="text-white font-bold text-xl p-4 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">Hồn Việt Cổ Truyền</h3>
+                  </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5xas5emYnQEqgmHL7i6GRGY3XqNQyMDqy7g&s" />
+                  <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-500 flex items-end">
+                    <h3 class="text-white font-bold text-xl p-4 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">Tương Lai BTEC</h3>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-ink-black text-white">
+      <div class="container mx-auto px-6 py-12">
+        <div class="grid md:grid-cols-3 gap-12 text-center md:text-left">
+          <div class="md:col-span-1">
+            <h3 class="font-serif text-2xl font-bold mb-4">Cao Đẳng Quốc Tế BTEC</h3>
+            <p class="text-gray-400">
+              Nơi chắp cánh cho những giấc mơ vươn ra biển lớn, vững vàng hành trang tri thức và bản sắc văn hóa Việt.
+            </p>
+            
+          </div>
+          <div>
+            <h3 class="font-serif text-xl font-bold mb-4">Thông Tin Liên Hệ</h3>
+            <ul class="space-y-2 text-gray-300">
+              <li><strong>Địa chỉ:</strong> Trịnh Văn Bô , Nam Từ Liêm , Hà Nội</li>
+              <li><strong>Email:</strong> btec.hn@fpt.edu.vn</li>
+              <li><strong>Hotline:</strong> 0981 090 513</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-serif text-xl font-bold mb-4">Kết Nối Với Chúng Tôi</h3>
+            <div class="flex justify-center md:justify-start space-x-4">
+              <a href="https://www.facebook.com/fptbtec/" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-summer-gold transition-colors duration-300">
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+              </a>
+              <a href="#" class="text-gray-300 hover:text-summer-gold transition-colors duration-300">
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.585-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.585-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.585.069-4.85c.149-3.225 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.85-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98C23.986 15.667 24 15.259 24 12s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98C15.667.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z" /></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="mt-12 pt-8 border-t border-gray-700 text-center text-gray-500 text-sm">
+          <p>&copy; 2024 Cao đẳng quốc tế BTEC. Thiết kế với niềm tự hào.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll To Top Button -->
+    <div id="scroll-to-top-container" class="fixed bottom-5 right-5 z-50">
+        <button
+          id="scroll-to-top-button"
+          class="bg-btec-red text-white p-3 rounded-full shadow-lg hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-btec-red transition-all duration-300 hidden"
+          aria-label="Go to top"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+          </svg>
+        </button>
+    </div>
+
+    <!-- JavaScript for Interactivity -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Mobile Menu Toggle
+            const menuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const openIcon = document.getElementById('menu-open-icon');
+            const closeIcon = document.getElementById('menu-close-icon');
+            const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+            menuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                openIcon.classList.toggle('hidden');
+                closeIcon.classList.toggle('hidden');
+            });
+
+            mobileNavLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    openIcon.classList.remove('hidden');
+                    closeIcon.classList.add('hidden');
+                });
+            });
+
+            // Scroll-to-Top Button
+            const scrollToTopButton = document.getElementById('scroll-to-top-button');
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 300) {
+                    scrollToTopButton.classList.remove('hidden');
+                } else {
+                    scrollToTopButton.classList.add('hidden');
+                }
+            });
+
+            // Section Fade-in Animation
+            const sections = document.querySelectorAll('.fade-in-section');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
